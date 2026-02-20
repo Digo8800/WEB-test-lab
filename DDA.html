@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title> Агрегатор Avito </title>
+
+    <style>
+        body {
+            color: rgb(20, 20, 20);
+            background-color: rgba(210, 210, 210, 0.856);
+        }
+
+        .header {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .pairs-header {
+            text-align: left;
+            font-size: 18px;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            margin-bottom: -16px;
+        }
+
+
+        .grid {
+            width: 32%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 16px;
+        }
+
+        .flex {
+           display: flex;
+           justify-content: flex-start;
+           flex-direction: row;
+           align-items: flex-start;
+           gap: 16px;
+           margin: 20px 0;
+           flex-wrap: wrap;
+        }
+
+        .pair-card {
+            box-shadow: 0 0 5px gray;
+            display: inline-block;
+            border-radius: 15px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .pair-card__title {
+            font-size: 24px;
+            color:rgb(37, 37, 37);
+            margin-bottom: 12px;
+        }
+
+        .pair-card__price {
+            font-size: 20px;
+            color:rgb(48, 47, 47);
+            margin-bottom: 6px;
+        }
+
+        .pair-card__change {
+            font-size: 16px;
+            color:rgb(48, 47, 47);
+        }
+
+
+        .position-card {
+            box-shadow: 0 0 5px gray;
+            display: inline-block;
+            border-radius: 6px;
+            padding: 10px;
+        }
+
+        .position-card__title {
+            font-size: 22px;
+            color:rgb(37, 37, 37);
+            margin-bottom: 8px;
+        }
+
+        .position-card__price {
+            font-size: 20px;
+            color:rgb(37, 37, 37);
+            margin-bottom: 20px;
+        }
+
+
+        button[data-action="add"] {
+            height: 60px;
+            min-width: 180px;
+            padding: 0 24px;
+            font-size: 18px;
+            border-radius: 12px;
+        }
+
+        [data-container] button[data-action="add"] {
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1> Агрегатор Avito </h1>
+    </header>
+
+  
+    <div class="pair-flex">
+        <div class="grid">
+            <div class="pairs-header">
+                <h2>Рекомендации</h2>
+            </div>
+
+            <div class="pair-card">
+                <div class="pair-card__title">Кулер процеccорный</div>
+                <div class="position-card__price">
+                    <a href="https://www.avito.ru/voronezh/tovary_dlya_kompyutera/kuler_protseccornyy_7790953650?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Ino1RTd0eGpHSXh3SDlYSkgiO30jTWPOJgAAAA">1 000 ₽ </a> </div>
+                <div class="pair-card__change">Продаю кулер полностью рабочий на медных трубках</div>
+            </div>
+
+            <div class="pair-card">
+                <div class="pair-card__title">Вентиляторы 140мм</div>
+                <div class="position-card__price">
+                    <a href="https://www.avito.ru/voronezh/tovary_dlya_kompyutera/ventilyatory_140mm_4pin_7947854995?context=H4sIAAAAAAAA_wE6AMX_YToxOntzOjE6IngiO3M6MzY6IjFiY2JkZmI2MmIxOTJiYTRlZTYxYjNhNDQzMzdjODlkMzM5YyI7fU0l8uM6AAAA">400 ₽ </a> </div>
+                <div class="pair-card__change">Хilenсe XРF140 ; Deеpcoоl Gаmеr Storm GF 140</div>
+                <div class="pair-card__change">bе quiеt! Рurе Wings 2  ; Nосtuа NF-Р14R</div>
+            </div>
+
+            <div class="pair-card">
+                <div class="pair-card__title">Розовая Sony PlayStation 2 Slim</div>
+                <div class="position-card__price">
+                    <a href="https://www.avito.ru/moskva/igry_pristavki_i_programmy/rozovaya_sony_playstation_2_slim_7886001510?context=H4sIAAAAAAAA_wE6AMX_YToxOntzOjE6IngiO3M6MzY6ImNiNjkzYWZlMGM4M2VjNjhhNGY0NGY2MWQ0OWNkMzNiODI3OCI7fS02oU86AAAA">8000 ₽ </a> </div>
+                <div class="pair-card__change">Длинное описание</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="positions-header">
+        <h2>Блоки Питания</h2>
+    </div>
+
+    <div data-container="1" class="flex">
+        <div data-card class="position-card">
+        <div class="pair-card__title">Блок питания Corsair AX1500i (1500вт)</div>
+        <div class="position-card__price">
+            <a href="https://www.avito.ru/lobnya/tovary_dlya_kompyutera/blok_pitaniya_corsair_ax1500i_1500vt_7906533702?slocation=625810&context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJNOVVpZ3R4UG56MjR0bXdOIjt9MK4kdj8AAAA">12 999 ₽ </a> </div>
+        <div class="pair-card__change">Доставка в Воронеж. От 1 дня, от 519 ₽</div>
+        <div class="pair-card__change">Блoк питaния Сorsаir AХ1500i Пpиобреталcя для майнингa в замeну тaкогo же! Paботaл 1,5 гoдa</div>
+
+    </div>
+
+    <div data-card class="position-card">
+        <div class="pair-card__title">Блок питания Corsair AX1500i (1500вт)</div>
+        <div class="position-card__price">
+                <a href="https://www.avito.ru/moskva/tovary_dlya_kompyutera/blok_pitaniya_dark_power_pro_12_1500w_7717540885?slocation=625810&context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxeEJLYVEwZGJTWm9ERHM1Ijt9MunnED8AAAA">27 000 ₽  </a> </div>
+        <div class="pair-card__change">В наличии: осталось 2 штуки</div>
+        <div class="pair-card__change">блок питания dark power и corsair hx 1000 в хорошем состоянии, использовались в течение года.Dark power 27000 руб</div>
+     </div>
+
+
+        <button data-action="add" data-target="1">Добавить</button>
+    </div>
+
+    <script>
+        const containers = document.querySelectorAll('[data-container]')
+        containers.forEach((container, index) =>
+        {
+            container.addEventListener('click', function (e)
+            {
+                const addbtn = e.target.closest('[data-action="add"]');
+                if (addbtn)
+                {
+                    const cardCount = container.querySelectorAll('[data-card]').length + 1
+                    const el = document.createElement('div')
+                    el.setAttribute('data-card', '')
+                    el.className = "position-card"
+                    el.innerHTML =`   
+                        <div class="position-card__title">Объявление</div>
+                        <div class="position-card__type">Описание </div>
+                        <div class="position-card__price">
+                        <a href="file:///C:/Users/dima9/Desktop/DDA.html"> Ссылка </a> </div>
+                    `
+                    container.insertBefore(el, addbtn)
+                }   
+            })
+        })
+    </script>
+</body>
+</html>
